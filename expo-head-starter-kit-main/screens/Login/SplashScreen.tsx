@@ -145,7 +145,7 @@ export default function SplashScreen() {
           px="$4"
           justifyContent="center"
         >
-          <HeaderLogo />
+          {/* <HeaderLogo /> */}
           <ActionButtons />
         </Box>
       </Center>

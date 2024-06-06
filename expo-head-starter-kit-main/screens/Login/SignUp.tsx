@@ -454,7 +454,7 @@ function SignUpFormComponent() {
 
         <SignUpForm />
 
-        <HStack my="$4" space="md" alignItems="center" justifyContent="center">
+        {/* <HStack my="$4" space="md" alignItems="center" justifyContent="center">
           <Divider
             w="$2/6"
             bg="$backgroundLight200"
@@ -495,7 +495,7 @@ function SignUpFormComponent() {
               <ButtonIcon as={GoogleIcon} size="md" />
             </Button>
           </Link>
-        </HStack>
+        </HStack> */}
 
         <HStack
           space="xs"

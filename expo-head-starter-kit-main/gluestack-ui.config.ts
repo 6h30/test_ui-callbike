@@ -10,16 +10,16 @@ const config = createConfig({
       white: '#FFFFFF',
       black: '#000000',
       primary0: '#F5F3FF',
-      primary50: '#F5F3FF',
-      primary100: '#DDD6FE',
-      primary200: '#C4B5FD',
-      primary300: '#A78BFA',
-      primary400: '#8B5CF6',
-      primary500: '#7C3AED',
-      primary600: '#6D28D9',
-      primary700: '#5B21B6',
-      primary800: '#4C1D95',
-      primary900: '#441e7d',
+      primary50: '#7fdff0',
+      primary100: '#66d5e9',
+      primary200: '#50cae0',
+      primary300: '#3abed5',
+      primary400: '#2aaec6',
+      primary500: '#2c9db1',
+      primary600: '#2d8c9d',
+      primary700: '#2d7c8a',
+      primary800: '#2d6d78',
+      primary900: '#2b5e67',
       primary950: '#441E7D',
 
       secondary0: '#FCFCFC',
@@ -240,6 +240,6 @@ type Components = typeof defaultConfig.components;
 // Extend the internal styled config
 
 declare module '@gluestack-style/react' {
-  interface ICustomConfig extends ConfigType {}
-  interface ICustomComponents extends Components {}
+  interface ICustomConfig extends ConfigType { }
+  interface ICustomComponents extends Components { }
 }

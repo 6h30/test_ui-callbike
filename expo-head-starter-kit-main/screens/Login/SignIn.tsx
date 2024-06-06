@@ -116,6 +116,7 @@ const SignInForm = () => {
   return (
     <>
       <VStack justifyContent="space-between">
+        {/* xu ly nhap email */}
         <FormControl
           isInvalid={(!!errors.email || isEmailFocused) && !!errors.email}
           isRequired={true}
@@ -156,7 +157,7 @@ const SignInForm = () => {
             </FormControlErrorText>
           </FormControlError>
         </FormControl>
-
+        {/* xu ly nhap password */}
         <FormControl my="$6" isInvalid={!!errors.password} isRequired={true}>
           <Controller
             name="password"
@@ -202,9 +203,11 @@ const SignInForm = () => {
           <FormControlHelper></FormControlHelper>
         </FormControl>
       </VStack>
+
       <StyledExpoRouterLink ml="auto" href="/forgot-password">
         <LinkText fontSize="$xs">Forgot password?</LinkText>
       </StyledExpoRouterLink>
+
       <Controller
         name="rememberme"
         defaultValue={false}
@@ -225,6 +228,7 @@ const SignInForm = () => {
           </Checkbox>
         )}
       />
+
       <Button
         variant="solid"
         size="lg"
@@ -260,6 +264,7 @@ function SideContainerWeb() {
 function MobileHeader() {
   return (
     <VStack px="$3" mt="$4.5" space="md">
+
       <HStack space="md" alignItems="center">
         <StyledExpoRouterLink href="..">
           <Icon
@@ -276,6 +281,7 @@ function MobileHeader() {
           Sign In
         </Text>
       </HStack>
+
       <VStack space="xs" ml="$1" my="$4">
         <Heading color="$textLight50" sx={{ _dark: { color: '$textDark50' } }}>
           Welcome back
@@ -291,6 +297,7 @@ function MobileHeader() {
           Sign in to continue
         </Text>
       </VStack>
+
     </VStack>
   );
 }
@@ -329,8 +336,10 @@ const Main = () => {
         >
           Sign in to continue
         </Heading>
+
         <SignInForm />
-        <HStack my="$4" space="md" alignItems="center" justifyContent="center">
+
+        {/* <HStack my="$4" space="md" alignItems="center" justifyContent="center">
           <Divider
             w="$2/6"
             bg="$backgroundLight200"
@@ -348,8 +357,9 @@ const Main = () => {
             bg="$backgroundLight200"
             sx={{ _dark: { bg: '$backgroundDark700' } }}
           />
-        </HStack>
-        <HStack
+        </HStack> */}
+
+        {/* <HStack
           mt="$6"
           sx={{
             '@md': {
@@ -362,16 +372,17 @@ const Main = () => {
           space="lg"
         >
           <Link href="">
-            <Button action="secondary" variant="link" onPress={() => {}}>
+            <Button action="secondary" variant="link" onPress={() => { }}>
               <ButtonIcon as={FacebookIcon} />
             </Button>
           </Link>
           <Link href="">
-            <Button action="secondary" variant="link" onPress={() => {}}>
+            <Button action="secondary" variant="link" onPress={() => { }}>
               <ButtonIcon as={GoogleIcon} />
             </Button>
           </Link>
-        </HStack>
+        </HStack> */}
+
         <HStack
           space="xs"
           alignItems="center"
@@ -389,6 +400,7 @@ const Main = () => {
             <LinkText fontSize="$sm">Sign up</LinkText>
           </StyledExpoRouterLink>
         </HStack>
+
       </Box>
     </>
   );
